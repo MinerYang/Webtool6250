@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title> Add</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style type="text/css">
+    .block{
+        display:block;
+    }
+    .center{
+        text-align:center;
+    }
+    label{
+        display:inline-block;
+        width: 100px;
+        text-align:right;
+    }
+    input{
+        vertical-align: top;
+        text-align:left;
+        background-color:rgb(240,240,240);
+    }
+</style>
+    <body>
+       <h1>Please enter the details below</h1>
+       <form action="servlet2" method="get">
+           <div class="block">
+               <label for="title">Movie title:</label> <input type="text"  name="title" /><br/><br />
+               <label for="actor">Lead Actor:</label> <input type="text"  name="actor" /><br/><br />
+               <label for="actress">Lead Actress:</label> <input type="text"  name="actress" /><br/><br />
+               <label for="genre">Genre:</label> <input type="text"  name="genre" /><br/><br />
+               <label for="year"> Year:</label> <input type="text"  name="year" /><br/><br />
+           </div>
+           <div class="block center">
+               <input type="submit" value="Add Movie"/>
+           </div> 
+       </form>
+    </body>
+</html>

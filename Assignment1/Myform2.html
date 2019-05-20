@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lab 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1> Welcome to the form!</h1><hr /><br />
+</head>
+
+<style type="text/css">
+    .block{
+        display:block;
+    }
+    .center{
+        text-align:center;
+    }
+    label{
+        display:inline-block;
+        width: 512px;
+        text-align:right;
+    }
+    input,textarea,select{
+        vertical-align: top;
+        text-align:left;
+        background-color:rgb(240,240,240);
+    }
+</style>
+
+<body>
+<form action="part4" method="post" >
+    <div class="block">
+        <label for="email">Email:</label>  <input type="text"  name="email" /><br/><br />
+        <label for="password">Password:</label>  <input type="password"  name="password" /><br /><br />
+        <label for="repassword">Comfirm your password:</label>  <input type="password"  name="repassword" /><br /><br />
+
+        <label for="picture">Upload your picture:</label> 
+        <input type="file" name="picpath" id="picpath" accept="image/*,pdf"/><br /><br />
+
+        <label for="gender">Gender:</label>  
+        <input type="radio" name="gender" value="male" checked/>male 
+        <input type="radio" name="gender" value="female" >female <br /><br />
+
+        <label for="country">Select Country:</label>
+        <select name="country" >
+                <option value ="America">America</option>
+                <option value ="China">China</option>
+                <option value="India">India</option>
+                <option value="Japan">Japan</option>
+        </select><br/><br />
+
+        <label for="hobby">Hobby:</label>
+        <input type="checkbox" name="hobbies" value="Cricket"> Cricket
+        <input type="checkbox" name="hobbies" value="Football">Football<br /><br />
+
+        <label for="address">Address:</label>
+        <textarea  name="address" rows="10" cols="30"></textarea><br /><br />
+    </div>
+
+    <div class="block center">
+        <input type="submit" value="提交"/>
+    </div>
+</form>
+</body>
+</html>
+
